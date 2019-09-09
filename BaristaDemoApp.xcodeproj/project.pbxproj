@@ -56,6 +56,9 @@
 		68EA9C472326F293004749E5 /* BaristaDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				68EA9C5E2326F661004749E5 /* Extensions */,
+				68EA9C5D2326F657004749E5 /* Models */,
+				68EA9C5C2326F5CE004749E5 /* Views */,
 				68EA9C482326F293004749E5 /* AppDelegate.swift */,
 				68EA9C4A2326F293004749E5 /* SceneDelegate.swift */,
 				68EA9C4C2326F293004749E5 /* ContentView.swift */,
@@ -73,6 +76,27 @@
 				68EA9C512326F295004749E5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68EA9C5C2326F5CE004749E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68EA9C5D2326F657004749E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68EA9C5E2326F661004749E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
