@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,13 @@
 		68EA9C4F2326F295004749E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68EA9C4E2326F295004749E5 /* Assets.xcassets */; };
 		68EA9C522326F295004749E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68EA9C512326F295004749E5 /* Preview Assets.xcassets */; };
 		68EA9C552326F295004749E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EA9C532326F295004749E5 /* LaunchScreen.storyboard */; };
+		68EA9C612326FB96004749E5 /* Barista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA9C602326FB96004749E5 /* Barista.swift */; };
+		68EA9C632326FBA2004749E5 /* BaristaStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA9C622326FBA2004749E5 /* BaristaStory.swift */; };
+		68EA9C652326FE79004749E5 /* BaristaSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA9C642326FE79004749E5 /* BaristaSkill.swift */; };
+		68EA9C67232701C4004749E5 /* BaristaStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA9C66232701C4004749E5 /* BaristaStoriesView.swift */; };
+		68F324A92328395500471568 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F324A82328395500471568 /* API.swift */; };
+		68F324AB232839CC00471568 /* BaristaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F324AA232839CC00471568 /* BaristaView.swift */; };
+		68F324AF2328441B00471568 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 68F324AE2328441B00471568 /* URLImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		68EA9C512326F295004749E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		68EA9C542326F295004749E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68EA9C562326F295004749E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68EA9C602326FB96004749E5 /* Barista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barista.swift; sourceTree = "<group>"; };
+		68EA9C622326FBA2004749E5 /* BaristaStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaStory.swift; sourceTree = "<group>"; };
+		68EA9C642326FE79004749E5 /* BaristaSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaSkill.swift; sourceTree = "<group>"; };
+		68EA9C66232701C4004749E5 /* BaristaStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaStoriesView.swift; sourceTree = "<group>"; };
+		68F324A82328395500471568 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		68F324AA232839CC00471568 /* BaristaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F324AF2328441B00471568 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,8 @@
 		68EA9C472326F293004749E5 /* BaristaDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				68F324AC23283B9500471568 /* New Group */,
+				68F324A72328394900471568 /* API */,
 				68EA9C5E2326F661004749E5 /* Extensions */,
 				68EA9C5D2326F657004749E5 /* Models */,
 				68EA9C5C2326F5CE004749E5 /* Views */,
@@ -81,6 +97,8 @@
 		68EA9C5C2326F5CE004749E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				68EA9C66232701C4004749E5 /* BaristaStoriesView.swift */,
+				68F324AA232839CC00471568 /* BaristaView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,6 +106,9 @@
 		68EA9C5D2326F657004749E5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				68EA9C602326FB96004749E5 /* Barista.swift */,
+				68EA9C622326FBA2004749E5 /* BaristaStory.swift */,
+				68EA9C642326FE79004749E5 /* BaristaSkill.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,6 +118,21 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68F324A72328394900471568 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				68F324A82328395500471568 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		68F324AC23283B9500471568 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +151,9 @@
 			dependencies = (
 			);
 			name = BaristaDemoApp;
+			packageProductDependencies = (
+				68F324AE2328441B00471568 /* URLImage */,
+			);
 			productName = BaristaDemoApp;
 			productReference = 68EA9C452326F293004749E5 /* BaristaDemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 68EA9C3C2326F293004749E5;
+			packageReferences = (
+				68F324AD2328441B00471568 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 68EA9C462326F293004749E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -170,9 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68EA9C67232701C4004749E5 /* BaristaStoriesView.swift in Sources */,
+				68EA9C652326FE79004749E5 /* BaristaSkill.swift in Sources */,
 				68EA9C492326F293004749E5 /* AppDelegate.swift in Sources */,
 				68EA9C4B2326F293004749E5 /* SceneDelegate.swift in Sources */,
+				68EA9C612326FB96004749E5 /* Barista.swift in Sources */,
+				68F324AB232839CC00471568 /* BaristaView.swift in Sources */,
 				68EA9C4D2326F293004749E5 /* ContentView.swift in Sources */,
+				68F324A92328395500471568 /* API.swift in Sources */,
+				68EA9C632326FBA2004749E5 /* BaristaStory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68F324AD2328441B00471568 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68F324AE2328441B00471568 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F324AD2328441B00471568 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68EA9C3D2326F293004749E5 /* Project object */;
 }
