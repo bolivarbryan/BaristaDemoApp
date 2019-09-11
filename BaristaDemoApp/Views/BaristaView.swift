@@ -23,8 +23,6 @@ struct BaristaView: View {
             .aspectRatio(1, contentMode: .fit)
             .frame(width: 80, height: 80)
             .cornerRadius(40)
-                
-            
             
             Text(barista.username)
                 .font(.footnote)

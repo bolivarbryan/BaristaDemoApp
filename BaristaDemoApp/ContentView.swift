@@ -10,10 +10,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            BaristaStoriesView()
-        }
-        
+            VStack(alignment: .leading) {
+                BaristaStoriesView(baristas: baristas)
+                
+                Divider()
+                
+                HStack {
+                    Text("Recomendados del dia")
+                        .font(.title)
+                }
+                .padding()
+                
+                FeaturedDrinksView(drinks: featuredDrinks)
+                
+                Spacer()
+            }
     }
 }
 

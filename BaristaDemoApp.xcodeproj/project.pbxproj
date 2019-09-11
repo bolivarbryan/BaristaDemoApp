@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		684FF8DB23286EDA00C4509E /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FF8DA23286EDA00C4509E /* DemoData.swift */; };
+		684FF8DD2328759500C4509E /* DrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FF8DC2328759500C4509E /* DrinkView.swift */; };
+		684FF8DF2328779300C4509E /* FeaturedDrinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FF8DE2328779300C4509E /* FeaturedDrinksView.swift */; };
 		68EA9C492326F293004749E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA9C482326F293004749E5 /* AppDelegate.swift */; };
 		68EA9C4B2326F293004749E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA9C4A2326F293004749E5 /* SceneDelegate.swift */; };
 		68EA9C4D2326F293004749E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA9C4C2326F293004749E5 /* ContentView.swift */; };
@@ -20,9 +23,13 @@
 		68F324A92328395500471568 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F324A82328395500471568 /* API.swift */; };
 		68F324AB232839CC00471568 /* BaristaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F324AA232839CC00471568 /* BaristaView.swift */; };
 		68F324AF2328441B00471568 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 68F324AE2328441B00471568 /* URLImage */; };
+		68F324B123285DBC00471568 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F324B023285DBC00471568 /* Drink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		684FF8DA23286EDA00C4509E /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		684FF8DC2328759500C4509E /* DrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkView.swift; sourceTree = "<group>"; };
+		684FF8DE2328779300C4509E /* FeaturedDrinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedDrinksView.swift; sourceTree = "<group>"; };
 		68EA9C452326F293004749E5 /* BaristaDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaristaDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EA9C482326F293004749E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68EA9C4A2326F293004749E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +44,7 @@
 		68EA9C66232701C4004749E5 /* BaristaStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaStoriesView.swift; sourceTree = "<group>"; };
 		68F324A82328395500471568 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		68F324AA232839CC00471568 /* BaristaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaView.swift; sourceTree = "<group>"; };
+		68F324B023285DBC00471568 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +78,7 @@
 		68EA9C472326F293004749E5 /* BaristaDemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				68F324AC23283B9500471568 /* New Group */,
+				684FF8DA23286EDA00C4509E /* DemoData.swift */,
 				68F324A72328394900471568 /* API */,
 				68EA9C5E2326F661004749E5 /* Extensions */,
 				68EA9C5D2326F657004749E5 /* Models */,
@@ -99,6 +107,8 @@
 			children = (
 				68EA9C66232701C4004749E5 /* BaristaStoriesView.swift */,
 				68F324AA232839CC00471568 /* BaristaView.swift */,
+				684FF8DC2328759500C4509E /* DrinkView.swift */,
+				684FF8DE2328779300C4509E /* FeaturedDrinksView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +119,7 @@
 				68EA9C602326FB96004749E5 /* Barista.swift */,
 				68EA9C622326FBA2004749E5 /* BaristaStory.swift */,
 				68EA9C642326FE79004749E5 /* BaristaSkill.swift */,
+				68F324B023285DBC00471568 /* Drink.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,13 +137,6 @@
 				68F324A82328395500471568 /* API.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		68F324AC23283B9500471568 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,11 +219,15 @@
 				68EA9C67232701C4004749E5 /* BaristaStoriesView.swift in Sources */,
 				68EA9C652326FE79004749E5 /* BaristaSkill.swift in Sources */,
 				68EA9C492326F293004749E5 /* AppDelegate.swift in Sources */,
+				684FF8DB23286EDA00C4509E /* DemoData.swift in Sources */,
 				68EA9C4B2326F293004749E5 /* SceneDelegate.swift in Sources */,
 				68EA9C612326FB96004749E5 /* Barista.swift in Sources */,
 				68F324AB232839CC00471568 /* BaristaView.swift in Sources */,
+				684FF8DF2328779300C4509E /* FeaturedDrinksView.swift in Sources */,
 				68EA9C4D2326F293004749E5 /* ContentView.swift in Sources */,
 				68F324A92328395500471568 /* API.swift in Sources */,
+				684FF8DD2328759500C4509E /* DrinkView.swift in Sources */,
+				68F324B123285DBC00471568 /* Drink.swift in Sources */,
 				68EA9C632326FBA2004749E5 /* BaristaStory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
